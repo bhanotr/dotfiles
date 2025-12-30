@@ -1,0 +1,38 @@
+# Background color
+color=1a1a1a
+
+# Show keyboard layout
+show-keyboard-layout
+
+# Show failed attempts
+show-failed-attempts
+
+# Ignore empty password submissions
+ignore-empty-password
+
+# Ring colors
+ring-color=3b4252
+key-hl-color=88c0d0
+bs-hl-color=bf616a
+line-color=00000000
+separator-color=00000000
+
+# Text colors
+text-color=eceff4
+text-caps-lock-color=ebcb8b
+text-ver-color=88c0d0
+text-wrong-color=bf616a
+
+# Inside ring colors
+inside-color=00000088
+inside-ver-color=5e81ac88
+inside-wrong-color=bf616a88
+inside-clear-color=ebcb8b88
+
+# Indicator position
+indicator-radius=100
+indicator-thickness=10
+
+# Font
+font=monospace
+font-size=14
