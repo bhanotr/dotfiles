@@ -1,0 +1,75 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: #333333;
+    border-bottom: 3px solid #5e81ac;
+}
+
+#workspaces button:hover {
+    background: #2a2a2a;
+}
+
+#mode {
+    background: #bf616a;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#window {
+    margin: 0 10px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#bluetooth,
+#tray {
+    padding: 0 10px;
+    margin: 0 2px;
+}
+
+#battery.charging {
+    color: #a3be8c;
+}
+
+#battery.warning:not(.charging) {
+    color: #ebcb8b;
+}
+
+#battery.critical:not(.charging) {
+    color: #bf616a;
+}
+
+#network.disconnected {
+    color: #bf616a;
+}
+
+#pulseaudio.muted {
+    color: #666666;
+}
+
+#tray {
+    background: #2a2a2a;
+}
