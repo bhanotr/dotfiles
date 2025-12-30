@@ -1,0 +1,14 @@
+[font]
+size = 18.0
+
+[font.normal]
+family = "IosevkaTerm NF"
+style = "Regular"
+
+[font.bold]
+family = "IosevkaTerm NF"
+style = "Bold"
+
+[font.italic]
+family = "IosevkaTerm NF"
+style = "Italic"
