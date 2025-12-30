@@ -1,0 +1,80 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "pulseaudio", "network", "bluetooth", "cpu", "memory", "temperature", "battery", "clock"],
+    
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+    
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    
+    "sway/window": {
+        "max-length": 50
+    },
+    
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+    
+    "memory": {
+        "format": "MEM {}%"
+    },
+    
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C"
+    },
+    
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "BAT {capacity}%",
+        "format-charging": "CHG {capacity}%",
+        "format-plugged": "PLUG {capacity}%"
+    },
+    
+    "network": {
+        "format-wifi": "WIFI {essid} ({signalStrength}%)",
+        "format-ethernet": "ETH {ipaddr}",
+        "format-linked": "ETH (No IP)",
+        "format-disconnected": "DISCONN",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
+    
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUTE",
+        "on-click": "pavucontrol"
+    },
+    
+    "bluetooth": {
+        "format": "BT {status}",
+        "format-connected": "BT {num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-enumerate-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
+    }
+}
